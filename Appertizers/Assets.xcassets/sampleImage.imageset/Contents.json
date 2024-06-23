@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "lazada-PRD-VN-seller-12e247a3-c470-47a8-953d-62e7d123cc6c.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

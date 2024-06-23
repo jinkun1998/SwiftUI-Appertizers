@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Appertizer: Decodable {
+struct Appertizer: Decodable, Identifiable {
     let id: Int
     let name: String
     let description: String
