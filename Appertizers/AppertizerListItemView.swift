@@ -13,10 +13,9 @@ struct AppertizerListItemView: View {
     
     var body: some View {
         HStack{
-            Image(appertizer.imageURL)
-                .resizable()
+            RemoteImageView(imageURL: appertizer.imageURL)
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
+                .frame(width: 100, height: 80)
             
             VStack (alignment: .leading, spacing: 5) {
                 Text(appertizer.name)
