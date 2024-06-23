@@ -13,7 +13,7 @@ final class NetworkManager{
     
     private init () {}
 
-    static let baseURL = "https://seanallen-course-backend.aherokuapp.com/swiftui-fundamentals/"
+    static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     static let appertizerURL = baseURL + "appetizers"
     
     func getAppertizers(completion: @escaping (Result<[Appertizer], NetworkError>) -> Void){

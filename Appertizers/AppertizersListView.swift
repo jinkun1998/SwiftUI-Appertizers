@@ -12,11 +12,19 @@ struct AppertizersListView: View {
     @StateObject var vm = AppertizerListViewModel()
     
     var body: some View {
+        
         NavigationView{
-            List(vm.appertizers, rowContent: { appertizer in
-                AppertizerListItemView(appertizer: appertizer)
-            })
-            .navigationBarTitle(Text("Appertizers"))
+            if (vm.isLoading){
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .controlSize(.extraLarge)
+            }
+            else{
+                List(vm.appertizers, rowContent: { appertizer in
+                    AppertizerListItemView(appertizer: appertizer)
+                })
+                .navigationBarTitle(Text("Appertizers"))
+            }
         }
         .onAppear {
             vm.getAppertizers()

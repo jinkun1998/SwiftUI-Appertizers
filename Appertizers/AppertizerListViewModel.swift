@@ -11,6 +11,7 @@ final class AppertizerListViewModel: ObservableObject {
     
     @Published var appertizers: [Appertizer] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading: Bool = true
     
     func getAppertizers() {
         
@@ -20,6 +21,7 @@ final class AppertizerListViewModel: ObservableObject {
                 switch result{
                 case .success(let appertizers):
                     self.appertizers = appertizers
+                    self.isLoading = false
                 case .failure(let error):
                     switch error {
                     case .hasError:
