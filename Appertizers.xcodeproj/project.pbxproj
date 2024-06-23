@@ -19,6 +19,7 @@
 		E9D05EE92C2811A100F0BF7B /* AppertizerListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EE82C2811A100F0BF7B /* AppertizerListItemView.swift */; };
 		E9D05EEB2C2817F000F0BF7B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EEA2C2817F000F0BF7B /* NetworkManager.swift */; };
 		E9D05EED2C28209900F0BF7B /* AppertizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EEC2C28209900F0BF7B /* AppertizerListViewModel.swift */; };
+		E9D05EEF2C2822E600F0BF7B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EEE2C2822E600F0BF7B /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		E9D05EE82C2811A100F0BF7B /* AppertizerListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppertizerListItemView.swift; sourceTree = "<group>"; };
 		E9D05EEA2C2817F000F0BF7B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E9D05EEC2C28209900F0BF7B /* AppertizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppertizerListViewModel.swift; sourceTree = "<group>"; };
+		E9D05EEE2C2822E600F0BF7B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				E9D05EE82C2811A100F0BF7B /* AppertizerListItemView.swift */,
 				E9D05EEA2C2817F000F0BF7B /* NetworkManager.swift */,
 				E9D05EEC2C28209900F0BF7B /* AppertizerListViewModel.swift */,
+				E9D05EEE2C2822E600F0BF7B /* Alert.swift */,
 			);
 			path = Appertizers;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				E963AE162C27F19600EB6B44 /* AppertizersApp.swift in Sources */,
 				E9D05EED2C28209900F0BF7B /* AppertizerListViewModel.swift in Sources */,
 				E9D05EE32C28084500F0BF7B /* OrderView.swift in Sources */,
+				E9D05EEF2C2822E600F0BF7B /* Alert.swift in Sources */,
 				E9D05EE72C28098A00F0BF7B /* MockData.swift in Sources */,
 				E9D05EDF2C2805DF00F0BF7B /* AppertizersListView.swift in Sources */,
 			);

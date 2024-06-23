@@ -21,6 +21,13 @@ struct AppertizersListView: View {
         .onAppear {
             vm.getAppertizers()
         }
+        .alert(item: $vm.alertItem) { alertItem in
+            Alert(
+                title: alertItem.title,
+                message: alertItem.message,
+                dismissButton: alertItem.buttonTitle
+            )
+        }
     }
 }
 

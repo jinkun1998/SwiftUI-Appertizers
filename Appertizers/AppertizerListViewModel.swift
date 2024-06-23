@@ -10,6 +10,7 @@ import Foundation
 final class AppertizerListViewModel: ObservableObject {
     
     @Published var appertizers: [Appertizer] = []
+    @Published var alertItem: AlertItem?
     
     func getAppertizers() {
         
@@ -20,7 +21,16 @@ final class AppertizerListViewModel: ObservableObject {
                 case .success(let appertizers):
                     self.appertizers = appertizers
                 case .failure(let error):
-                    print("Error: \(error.localizedDescription)")
+                    switch error {
+                    case .hasError:
+                        self.alertItem = AlertContext.ServerError
+                    case .invalidURL:
+                        self.alertItem = AlertContext.NoNetwork
+                    case .invalidResponse:
+                        self.alertItem = AlertContext.InvalidData
+                    case .invalidData:
+                        self.alertItem = AlertContext.NoData
+                    }
                 }
             }
         }
