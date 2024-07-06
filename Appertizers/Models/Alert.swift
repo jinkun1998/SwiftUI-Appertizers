@@ -16,6 +16,7 @@ struct AlertItem: Identifiable{
 }
 
 final class AlertContext{
+    
     static let ServerError = AlertItem(
         title: Text("Error"),
         message: Text("Server Error"),
@@ -37,6 +38,19 @@ final class AlertContext{
     static let InvalidData = AlertItem(
         title: Text("Error"),
         message: Text("Invalid Data"),
+        buttonTitle: .default(Text("OK"))
+    )
+    
+    // MARK: ACCOUNT
+    static let InvalidForm = AlertItem(
+        title: Text("Error"),
+        message: Text("Invalid Form"),
+        buttonTitle: .default(Text("OK"))
+    )
+    
+    static let InvalidEmail = AlertItem(
+        title: Text("Error"),
+        message: Text("Invalid Email"),
         buttonTitle: .default(Text("OK"))
     )
 }
