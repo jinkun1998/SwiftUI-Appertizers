@@ -17,6 +17,8 @@
 		E97E32AF2C3910AC00AAAF6D /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32AE2C3910AC00AAAF6D /* AccountViewModel.swift */; };
 		E97E32B22C39172F00AAAF6D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32B12C39172F00AAAF6D /* StringExtension.swift */; };
 		E97E32B42C391F3000AAAF6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32B32C391F3000AAAF6D /* User.swift */; };
+		E97E32B62C3923EF00AAAF6D /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32B52C3923EF00AAAF6D /* OrderViewModel.swift */; };
+		E97E32B92C3928D900AAAF6D /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32B82C3928D900AAAF6D /* EmptyState.swift */; };
 		E9D05EDF2C2805DF00F0BF7B /* AppertizersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EDE2C2805DF00F0BF7B /* AppertizersListView.swift */; };
 		E9D05EE12C2806BC00F0BF7B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EE02C2806BC00F0BF7B /* AccountView.swift */; };
 		E9D05EE32C28084500F0BF7B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EE22C28084500F0BF7B /* OrderView.swift */; };
@@ -43,6 +45,8 @@
 		E97E32AE2C3910AC00AAAF6D /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		E97E32B12C39172F00AAAF6D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E97E32B32C391F3000AAAF6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E97E32B52C3923EF00AAAF6D /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		E97E32B82C3928D900AAAF6D /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		E9D05EDE2C2805DF00F0BF7B /* AppertizersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppertizersListView.swift; sourceTree = "<group>"; };
 		E9D05EE02C2806BC00F0BF7B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		E9D05EE22C28084500F0BF7B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 			children = (
 				E97E32A12C3906A700AAAF6D /* Images */,
 				E97E32A02C39069B00AAAF6D /* Buttons */,
+				E97E32B82C3928D900AAAF6D /* EmptyState.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				E9D05EEC2C28209900F0BF7B /* AppertizerListViewModel.swift */,
 				E9D05EF42C28301000F0BF7B /* RemoteImageViewModel.swift */,
 				E97E32AE2C3910AC00AAAF6D /* AccountViewModel.swift */,
+				E97E32B52C3923EF00AAAF6D /* OrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 				E9F8DC3F2C38EBD40021F45F /* AppertizerDetailView.swift in Sources */,
 				E963AE162C27F19600EB6B44 /* AppertizersApp.swift in Sources */,
 				E9D05EED2C28209900F0BF7B /* AppertizerListViewModel.swift in Sources */,
+				E97E32B62C3923EF00AAAF6D /* OrderViewModel.swift in Sources */,
 				E9D05EE32C28084500F0BF7B /* OrderView.swift in Sources */,
 				E9D05EEF2C2822E600F0BF7B /* Alert.swift in Sources */,
 				E9D05EF52C28301000F0BF7B /* RemoteImageViewModel.swift in Sources */,
@@ -307,6 +314,7 @@
 				E97E32B22C39172F00AAAF6D /* StringExtension.swift in Sources */,
 				E9D05EF32C282FAA00F0BF7B /* RemoteImageView.swift in Sources */,
 				E9D05EDF2C2805DF00F0BF7B /* AppertizersListView.swift in Sources */,
+				E97E32B92C3928D900AAAF6D /* EmptyState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

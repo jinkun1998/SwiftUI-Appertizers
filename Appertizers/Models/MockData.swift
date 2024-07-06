@@ -18,7 +18,6 @@ struct MockData {
         carbs: 99,
         price: 99.99,
         imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg"
-//        imageURL: "sampleImage"
     )
     
     static let sampleDataList: [Appertizer] = [
