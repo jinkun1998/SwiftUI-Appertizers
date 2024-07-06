@@ -13,9 +13,19 @@ struct AppertizerListItemView: View {
     
     var body: some View {
         HStack{
-            RemoteImageView(imageURL: appertizer.imageURL)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 80)
+//            RemoteImageView(imageURL: appertizer.imageURL)
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 100, height: 80)
+            
+            AsyncImage(url: URL(string: appertizer.imageURL)) { image in
+                image
+                    .useImageThumbnailStyle(100, 100)
+            } placeholder: {
+                Image("emptyFood")
+                    .useImageThumbnailStyle(100, 100)
+                
+            }
+
             
             VStack (alignment: .leading, spacing: 5) {
                 Text(appertizer.name)

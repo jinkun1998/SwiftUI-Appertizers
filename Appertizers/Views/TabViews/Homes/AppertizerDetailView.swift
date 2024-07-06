@@ -9,16 +9,28 @@ import SwiftUI
 
 struct AppertizerDetailView: View {
     
-    @EnvironmentObject var order: Order
+//    @EnvironmentObject var order: Order
     let appertizer: Appertizer
     @Binding var isShowDetailView: Bool
     
     var body: some View {
         VStack{
             // image
-            RemoteImageView(imageURL: appertizer.imageURL)
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 320, height: 250)
+//            RemoteImageView(imageURL: appertizer.imageURL)
+//                .aspectRatio(contentMode: .fill)
+//                .frame(width: 320, height: 250)
+            
+            AsyncImage(url: URL(string: appertizer.imageURL)) { image in
+                image
+                    .useImageThumbnailStyle(350, 250)
+            } placeholder: {
+//                Image("emptyFood")
+//                    .useImageThumbnailStyle(250, 250)
+                ProgressView()
+                    .frame(width: 350,height: 250)
+                    .tint(.accentColor)
+                    .controlSize(.large)
+            }
             
             // title + description
             VStack(spacing: 20) {
@@ -45,7 +57,7 @@ struct AppertizerDetailView: View {
             
             // button
             Button(action: {
-                order.add(appertizer)
+//                order.add(appertizer)
                 isShowDetailView = false
             }, label: {
                 Text("$\(appertizer.price,specifier: "%.2f") - Add to Order")
