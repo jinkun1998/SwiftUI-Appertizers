@@ -33,7 +33,10 @@ struct AppertizersListView: View {
                     .disabled(vm.isShowDetailView)
                 }
             }
-            .onAppear {
+//            .onAppear {
+//                vm.getAppertizers()
+//            }
+            .task {
                 vm.getAppertizers()
             }
             .alert(item: $vm.alertItem) { alertItem in

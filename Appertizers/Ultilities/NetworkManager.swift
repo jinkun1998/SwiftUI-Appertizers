@@ -18,40 +18,56 @@ final class NetworkManager{
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     static let appertizerURL = baseURL + "appetizers"
     
-    func getAppertizers(completion: @escaping (Result<[Appertizer], NetworkError>) -> Void){
+//    func getAppertizers(completion: @escaping (Result<[Appertizer], NetworkError>) -> Void){
+//        
+//        guard let url = URL(string: NetworkManager.appertizerURL) else{
+//            completion(.failure(.invalidURL))
+//            return
+//        }
+//        
+//        let task = URLSession.shared.dataTask(with: url) { data, urlResponse, error in
+//            if let _ = error {
+//                completion(.failure(.hasError))
+//                return
+//            }
+//            
+//            guard let urlResponse = urlResponse as? HTTPURLResponse, urlResponse.statusCode == 200 else{
+//                completion(.failure(.invalidResponse))
+//                return
+//            }
+//            
+//            guard let dataResponse = data else {
+//                completion(.failure(.invalidResponse))
+//                return
+//            }
+//            
+//            do{
+//                let decoder = JSONDecoder()
+//                let decodedData = try decoder.decode(AppertizerResponse.self, from: dataResponse)
+//                completion(.success(decodedData.request))
+//            }
+//            catch{
+//                completion(.failure(.invalidData))
+//            }
+//        }
+//        
+//        task.resume()
+//    }
+    
+    func getAppertizers() async throws -> [Appertizer]{
         
         guard let url = URL(string: NetworkManager.appertizerURL) else{
-            completion(.failure(.invalidURL))
-            return
+            throw NetworkError.invalidURL
         }
         
-        let task = URLSession.shared.dataTask(with: url) { data, urlResponse, error in
-            if let _ = error {
-                completion(.failure(.hasError))
-                return
-            }
-            
-            guard let urlResponse = urlResponse as? HTTPURLResponse, urlResponse.statusCode == 200 else{
-                completion(.failure(.invalidResponse))
-                return
-            }
-            
-            guard let dataResponse = data else {
-                completion(.failure(.invalidResponse))
-                return
-            }
-            
-            do{
-                let decoder = JSONDecoder()
-                let decodedData = try decoder.decode(AppertizerResponse.self, from: dataResponse)
-                completion(.success(decodedData.request))
-            }
-            catch{
-                completion(.failure(.invalidData))
-            }
-        }
+        let (data, _) = try await URLSession.shared.data(from: url)
         
-        task.resume()
+        do{
+            return try JSONDecoder().decode(AppertizerResponse.self, from: data).request
+        }
+        catch{
+            throw NetworkError.invalidData
+        }
     }
     
     func downloadImage(fromURLString: String,completion: @escaping (UIImage?) -> Void){
