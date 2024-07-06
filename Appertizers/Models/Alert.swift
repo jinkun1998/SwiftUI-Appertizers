@@ -53,4 +53,16 @@ final class AlertContext{
         message: Text("Invalid Email"),
         buttonTitle: .default(Text("OK"))
     )
+    
+    static let InvalidUser = AlertItem(
+        title: Text("Error"),
+        message: Text("Invalid User"),
+        buttonTitle: .default(Text("OK"))
+    )
+    
+    static let SuccessSave = AlertItem(
+        title: Text("Success"),
+        message: Text("Saved"),
+        buttonTitle: .default(Text("OK"))
+    )
 }

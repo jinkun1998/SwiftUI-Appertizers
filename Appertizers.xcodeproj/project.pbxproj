@@ -16,6 +16,7 @@
 		E97E32AD2C3908A500AAAF6D /* AppertizerNutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32AC2C3908A500AAAF6D /* AppertizerNutritionView.swift */; };
 		E97E32AF2C3910AC00AAAF6D /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32AE2C3910AC00AAAF6D /* AccountViewModel.swift */; };
 		E97E32B22C39172F00AAAF6D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32B12C39172F00AAAF6D /* StringExtension.swift */; };
+		E97E32B42C391F3000AAAF6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E32B32C391F3000AAAF6D /* User.swift */; };
 		E9D05EDF2C2805DF00F0BF7B /* AppertizersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EDE2C2805DF00F0BF7B /* AppertizersListView.swift */; };
 		E9D05EE12C2806BC00F0BF7B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EE02C2806BC00F0BF7B /* AccountView.swift */; };
 		E9D05EE32C28084500F0BF7B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D05EE22C28084500F0BF7B /* OrderView.swift */; };
@@ -41,6 +42,7 @@
 		E97E32AC2C3908A500AAAF6D /* AppertizerNutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppertizerNutritionView.swift; sourceTree = "<group>"; };
 		E97E32AE2C3910AC00AAAF6D /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		E97E32B12C39172F00AAAF6D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E97E32B32C391F3000AAAF6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9D05EDE2C2805DF00F0BF7B /* AppertizersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppertizersListView.swift; sourceTree = "<group>"; };
 		E9D05EE02C2806BC00F0BF7B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		E9D05EE22C28084500F0BF7B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				E9D05EE62C28098A00F0BF7B /* MockData.swift */,
 				E9D05EE42C2808C900F0BF7B /* Appertizer.swift */,
 				E9D05EEE2C2822E600F0BF7B /* Alert.swift */,
+				E97E32B32C391F3000AAAF6D /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				E97E32A82C39080300AAAF6D /* APButton.swift in Sources */,
 				E963AE182C27F19600EB6B44 /* AppertizersTabView.swift in Sources */,
 				E9D05EE92C2811A100F0BF7B /* AppertizerListItemView.swift in Sources */,
+				E97E32B42C391F3000AAAF6D /* User.swift in Sources */,
 				E9F8DC3F2C38EBD40021F45F /* AppertizerDetailView.swift in Sources */,
 				E963AE162C27F19600EB6B44 /* AppertizersApp.swift in Sources */,
 				E9D05EED2C28209900F0BF7B /* AppertizerListViewModel.swift in Sources */,
