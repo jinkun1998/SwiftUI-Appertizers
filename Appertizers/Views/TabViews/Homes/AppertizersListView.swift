@@ -28,6 +28,7 @@ struct AppertizersListView: View {
                                 vm.selectedAppertizer = appertizer
                             }
                     })
+                    .listStyle(.plain)
                     .navigationBarTitle(Text("Appertizers"))
                     .disabled(vm.isShowDetailView)
                 }

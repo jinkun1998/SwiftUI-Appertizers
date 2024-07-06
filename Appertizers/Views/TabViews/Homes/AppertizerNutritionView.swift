@@ -22,7 +22,7 @@ struct AppertizerNutritionView: View {
             Text("\(value)")
                 .font(.caption)
                 .fontWeight(.semibold)
-                .foregroundColor(.gray)
+                .foregroundColor(.black)
                 .italic()
         }
     }

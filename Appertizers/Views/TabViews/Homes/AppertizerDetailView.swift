@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AppertizerDetailView: View {
     
+    @EnvironmentObject var order: Order
     let appertizer: Appertizer
     @Binding var isShowDetailView: Bool
     
@@ -44,10 +45,13 @@ struct AppertizerDetailView: View {
             
             // button
             Button(action: {
-                print("tapped")
+                order.add(appertizer)
+                isShowDetailView = false
             }, label: {
-                APButton(title: "$\(appertizer.price,specifier: "%.2f") - Add to Order")
+                Text("$\(appertizer.price,specifier: "%.2f") - Add to Order")
             })
+            .modifier(StandardButtonStyle())
+            .padding(.bottom, 20)
         }
         .frame(width: 320, height: 550)
         .background(.white)
